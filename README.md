@@ -9,7 +9,7 @@ On Windows:
 GRAB stores everything in ```Documents/GRAB``` or ```Documents/GRAB-Demo```.
 
 On Quest:
-GRAB stores everything in ```Android/data/GRAB``` or ```Android/data/GRAB-Demo```.
+GRAB stores everything in ```Android/data/com.slindev.grab``` or ```Android/data/com.slindev.grab_demo```.
 
 Your own levels that can be opened and saved in the editor are stored in ```levels/user``` The file name should have the ```.level``` extension, but the name itself can be anything. By default the game uses timestamps for the names to prevent any naming conflicts with already existing levels. Level file names only need to be unique for a user unless you want to update an existing level.
 
