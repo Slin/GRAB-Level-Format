@@ -29,7 +29,7 @@ def main():
 		codLevelData = json.load(inputFile)
 
 	level = level_pb2.Level()
-	level.formatVersion = 1
+	level.formatVersion = 4
 	if "title" in codLevelData:
 		level.title = codLevelData["title"]
 	if "creators" in codLevelData:
