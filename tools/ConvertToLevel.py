@@ -18,6 +18,7 @@ def main():
 
 	typeMapping = {}
 	typeMapping["default"] = types_pb2.LevelNodeMaterial.DEFAULT
+	typeMapping["default_colored"] = types_pb2.LevelNodeMaterial.DEFAULT_COLORED
 	typeMapping["grabbable"] = types_pb2.LevelNodeMaterial.GRABBABLE
 	typeMapping["grapplable"] = types_pb2.LevelNodeMaterial.GRAPPLABLE
 	typeMapping["ice"] = types_pb2.LevelNodeMaterial.ICE
@@ -92,6 +93,12 @@ def main():
 			node.levelNodeStatic.rotation.y = element["rotation"][1]
 			node.levelNodeStatic.rotation.z = element["rotation"][2]
 			node.levelNodeStatic.rotation.w = element["rotation"][3]
+
+			if typeMapping[element["type"]] == types_pb2.LevelNodeMaterial.DEFAULT_COLORED:
+				node.levelNodeStatic.color.r = element["color"][0]
+				node.levelNodeStatic.color.g = element["color"][1]
+				node.levelNodeStatic.color.b = element["color"][2]
+				node.levelNodeStatic.color.a = 1.0
 
 			complexity += 2
 

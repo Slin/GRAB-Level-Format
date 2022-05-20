@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .DS_Store
 /internal
+/protofiles/.DS_Store
