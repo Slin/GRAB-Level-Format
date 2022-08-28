@@ -4,7 +4,7 @@ import json
 from generated import types_pb2, level_pb2
 
 def main():
-	if len(sys.argv) < 2:
+	if len(sys.argv) < 3:
 		print('python3 convert.py input.json output.level')
 		return
 
