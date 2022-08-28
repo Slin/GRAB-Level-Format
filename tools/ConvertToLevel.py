@@ -1,3 +1,4 @@
+#!/bin/python
 import sys
 import json
 from generated import types_pb2, level_pb2
