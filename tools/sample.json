@@ -1,26 +1,45 @@
 {
-	"title": "Sample Level",
-	"description": "A very simple level for testing json to level conversation",
-	"creators": "Slin",
-	"checkpoints": 5,
-
-	"start": {
-		"position": [0.0, 0.0, 10.0],
-		"rotation": [0.0, 0.0, 0.0, 1.0],
-		"radius": 1.0
-	},
-	"finish": {
-		"position": [0.0, 0.0, -10.0],
-		"radius": 1.0
-	},
-
-	"nodes": [
-		{
-			"type": "default",
-			"shape": "cube",
-			"position": [0.0, -0.25, 0.0],
-			"rotation": [0.0, 0.0, 0.0, 1.0],
-			"scale": [3.0, 0.5, 20.0]
-		}
-	]
+    "complexity": 2,
+    "creators": "Slin",
+    "description": "A very simple level for testing json to level conversation",
+    "formatVersion": 1,
+    "levelNodes": [
+        {
+            "levelNodeStart": {
+                "position": {
+                    "z": 10.0
+                },
+                "radius": 1.0,
+                "rotation": {
+                    "w": 1.0
+                }
+            }
+        },
+        {
+            "levelNodeFinish": {
+                "position": {
+                    "z": -10.0
+                },
+                "radius": 1.0
+            }
+        },
+        {
+            "levelNodeStatic": {
+                "position": {
+                    "y": -0.25
+                },
+                "rotation": {
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 3.0,
+                    "y": 0.5,
+                    "z": 20.0
+                },
+                "shape": "CUBE"
+            }
+        }
+    ],
+    "maxCheckpointCount": 5,
+    "title": "Sample Level"
 }
