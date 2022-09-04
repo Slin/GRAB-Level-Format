@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import json
 from google.protobuf import json_format
